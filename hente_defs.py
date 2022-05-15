@@ -3,10 +3,14 @@ file = open(filename)
 
 
 def get_defs():
-    defs = []
+    print("\n\nDEFS\n\n")
     for line in file:
         if line[0:3] == 'def':
             print(line[0:len(line) - 2])
-    print(*defs)
+
+
+def get_classes():
+    print("\n\nDEFS\n\n")
+
 
 get_defs()
