@@ -1,12 +1,11 @@
 import re
 
 input_filname = input("filnavn: ")
-filename = r"C:\Users\sogsquid\Desktop\midlertidig_plassering\munchvrak\backend\weekly_menu\views.py"
-re.escape(filename)
+re.escape(input_filname)
 
 
 def get_defs():
-    file = open(filename)
+    file = open(input_filname)
     print("\n\nMETODER\n")
     for line in file:
         if line[0:3] == 'def':
@@ -15,7 +14,7 @@ def get_defs():
 
 
 def get_classes():
-    file = open(filename)
+    file = open(input_filname)
     print("\n\nKLASSER\n")
     for line in file:
         if line.__contains__('class'):
