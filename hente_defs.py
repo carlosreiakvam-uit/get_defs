@@ -1,4 +1,8 @@
-filename = r"C:\Users\sogsquid\Desktop\midlertidig_plassering\munchvrak\backend\recipes\views.py"
+import re
+
+input_filname = input("filnavn: ")
+filename = r"C:\Users\sogsquid\Desktop\midlertidig_plassering\munchvrak\backend\weekly_menu\views.py"
+re.escape(filename)
 
 
 def get_defs():
