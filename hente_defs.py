@@ -1,4 +1,4 @@
-filename = r"C:\Users\sogsquid\Desktop\midlertidig_plassering\munchvrak\backend\auth\queries.py"
+filename = r"C:\Users\sogsquid\Desktop\midlertidig_plassering\munchvrak\backend\auth\forms.py"
 
 
 def get_defs():
@@ -14,7 +14,7 @@ def get_classes():
     file = open(filename)
     print("\n\nKLASSER\n")
     for line in file:
-        if line[0:4] == 'class':
+        if line.__contains__('class'):
             print(line[0:len(line) - 2])
     file.close()
 
