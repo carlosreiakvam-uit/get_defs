@@ -1,9 +1,9 @@
-filename = r"C:\Users\sogsquid\Desktop\midlertidig_plassering\munchvrak\backend\auth\forms.py"
+filename = r"C:\Users\sogsquid\Desktop\midlertidig_plassering\munchvrak\backend\recipes\views.py"
 
 
 def get_defs():
     file = open(filename)
-    print("\n\nMETODER\n\n")
+    print("\n\nMETODER\n")
     for line in file:
         if line[0:3] == 'def':
             print(line[0:len(line) - 2])
